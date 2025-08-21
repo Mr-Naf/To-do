@@ -8,57 +8,6 @@
     <title>To-Do</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-        body {
-            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-        }
-
-        .card {
-            border-radius: 1.5rem;
-        }
-
-        .list-group-item {
-            transition: box-shadow 0.2s, background 0.2s;
-        }
-
-        .list-group-item:hover {
-            box-shadow: 0 2px 12px rgba(80, 80, 200, 0.08);
-            background: #f0f8ff;
-        }
-
-        .done .fw-medium {
-            text-decoration: line-through;
-            color: #888;
-        }
-
-        .icon-edit,
-        .icon-delete,
-        .iconEdit,
-        .iconDelete {
-            transition: background 0.2s, color 0.2s;
-        }
-
-        .icon-edit:hover,
-        .iconEdit:hover {
-            background: #e0eaff;
-            color: #0d6efd;
-        }
-
-        .icon-delete:hover,
-        .iconDelete:hover {
-            background: #ffe0e0;
-            color: #dc3545;
-        }
-
-        .iconDone:hover {
-            background: #d1f7d6;
-            color: #198754;
-        }
-
-        .form-control:focus {
-            box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, .25);
-        }
-    </style>
 </head>
 
 <body>
@@ -148,7 +97,7 @@
             }
         });
     </script>
-    <script src="{{ asset('js/todo.js') }}"></script>
+    <script src="{{asset('build/assets/js/todo.js')}}"></script>
 </body>
-
+</html>
 </html>

@@ -13,6 +13,7 @@ class TodoController extends Controller
         $todos= Todo::all();
         return view('index', ['todos' => $todos]);
     }
+
     public function add(Request $request){
         if ($request->ajax()) {
         $todo= new Todo;
@@ -23,7 +24,7 @@ class TodoController extends Controller
         }
     }
 
-    
+
     public function update(Request $request, $id){
        if($request->ajax()){
            $todo= Todo::find($id);
@@ -49,7 +50,7 @@ class TodoController extends Controller
            return "OK";
        }
     }
-    
-    
+
+
 }
 
